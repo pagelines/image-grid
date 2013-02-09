@@ -1,0 +1,133 @@
+//Section LESS
+
+.ig-images-container {
+	.ig-col-4 {
+		width:25%;
+		figure {
+			margin:3px;
+		}
+	}
+	.ig-col-3 {
+		width:33.333%;
+		figure {
+			margin:3px;
+		}
+	}
+	.ig-col-2 {
+		width:50%;
+		figure {
+			margin:10px;
+		}
+	}
+	@media (max-width: 1100px) {
+	    .ig-col-4 {
+			width:33.333%;
+			figure {
+				margin:3px;
+			}
+		}
+	}
+	@media (max-width: 860px) {
+	    .ig-col-3, .ig-col-4 {
+			width:50%;
+			figure {
+				margin:3px;
+			}
+		}
+	}
+	@media (max-width: 600px) {
+	    .ig-col-2, .ig-col-3, .ig-col-4 {
+			width:100%;
+			figure {
+				margin:3px;
+			}
+		}
+	}
+
+	.ig-image-container {
+		float: left;
+		overflow: hidden;
+		figure {
+			display: block;
+			position: relative;
+			float: left;
+			overflow: hidden;
+			.box-shadow(0 0 3px -1px rgba(0,0,0,0.2));
+		  	.border-radius(4px);
+
+			&:hover figcaption {
+				opacity: 1;
+			}
+			&:hover {
+
+				&:before {
+					opacity: 0;
+				}
+			}
+			&:before {
+				content: "?";
+				position: absolute;
+				font-weight: 500;
+				background: rgba(0,0,0,0.5);
+				color: white;
+				width: 24px;
+				height: 24px;
+				-webkit-border-radius: 12px;
+				-moz-border-radius:    12px;
+				border-radius:         12px;
+				text-align: center;
+				font-size: 14px;
+				line-height: 24px;
+				-moz-transition: all 0.4s ease;
+				.box-sizing(border-box);
+				text-shadow: 0 0 1px rgba(0,0,0,0.5);
+			}
+			img {
+				.box-shadow(0 0 5px rgba(0,0,0,0.2));
+			}
+		}
+		figcaption {
+			width:100%;
+			position: absolute;
+			background: rgba(0,0,0,0.5);
+			color: white;
+			opacity: 0.5;
+			transition:			all 0.4s ease;
+			-webkit-transition: all 0.4s ease;
+			-moz-transition:    all 0.4s ease;
+			-o-transition:      all 0.4s ease;
+			.box-sizing(border-box);
+			.box-shadow( 0 -3px 3px -3px rgba(0,0,0,0.35));
+			.border-radius( 0 0 4px 4px);
+			text-shadow: 0 0 1px rgba(0,0,0,0.5);
+			div {
+				margin: 10px 20px;
+			}
+		}
+	}
+	.modal {
+    	width: 800px;
+    	margin-left: -400px;
+	}
+
+	@media (max-width: 767px) {
+	    .modal {
+	        width: auto;
+	        margin-left: auto;
+	    }
+	}
+	.modal.fade.in {
+		top:10%;
+	}
+	.modal-body {
+    	max-height: 800px;
+	}
+	.modal-footer {
+		text-align: left;
+		background-color: transparent;
+	}
+}
+
+.ig-cap-bot:before { bottom: 10px; left: 10px; }
+.ig-cap-bot figcaption { left: 0; bottom: -80%;}
+.ig-cap-bot:hover figcaption { bottom: 0; }

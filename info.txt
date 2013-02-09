@@ -1,0 +1,17 @@
+== Description ==
+<h3>What is Image Grid?</h3>
+
+Image Grid is a gallery section that is great for multiple images on your site! Image Grid was inspired by Nick Haskins <a href="http://goo.gl/8IE5S">Projects</a>
+
+Image Grid can be inserted as a shortcode or by a traditional section. You can choose from a range of options including custom descriptions, image order, how many rows of images you want in your grid and more. When an image is clicked, the full image will pop open in a modal (bootstraps lightbox) where the user can click around in a carousel layout. It is awesome! :)
+
+Want it? <strong>Buy it! :)</strong>
+
+<h3>Support</h3>
+
+Please do not leave a review as a support question, they are for reviews. I am not notified of these reviews, and I have no way to respond to you. Please <strong>do not email me for support</strong>, because you will not receive a reply. If you need assistance, click the link in the box below - this link leads you to the forums where you can get support. <strong>Thanks!</strong>
+
+== Changelog ==
+
+= 1.0 =
+* Initial Release
