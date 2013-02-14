@@ -52,10 +52,10 @@ class ImageGrid extends PageLinesSection {
 		$option_array = array(
 			'ig_configs' => array(
 				'type'    => 'multi_option',
-				'title'   => 'Config Options - Optional',
+				'title'   => 'Config Options (optional)',
 				'shortexp'  => 'Control the selection, ordering and number of images in Image Grid',
 				'selectvalues' => array(
-					'ig_shortcode_override'  => array( 'inputlabel' => 'Disable section output use this if you want to use the [imagegrid] shortcode.', 'type' => 'select', 'selectvalues' => array(
+					'ig_shortcode_override'  => array( 'inputlabel' => 'Disable section output (use this if you want to use the [imagegrid] shortcode).', 'type' => 'select', 'selectvalues' => array(
 							true   => array( 'name' => "Yes" ),
 							false   => array( 'name' => "No" ),
 						) ),
@@ -83,7 +83,7 @@ class ImageGrid extends PageLinesSection {
 			'ig_more_info'    => array(
 				'type'          => '',
 				'title'      => '<strong style="display:block;font-size:16px;color:#eaeaea;text-shadow:0 1px 0 black;padding:7px 7px 5px;background:#333;margin-top:5px;border-radius:3px;border:1px solid white;letter-spacing:0.1em;box-shadow:inset 0 0 3px black;">HOW TO USE:</strong>',
-				'shortexp'   => '<strong>1.</strong> Drag Image Grid to a template of your choice.<br/><br /><strong>2.</strong> Go to the page where you want you image grid.<strong>3.</strong> Upload an image gallery to your page (You have to upload images - you cannot choose images that is not uploaded to the specific post or page).<br/><br /><strong>4.</strong> Type in the meta information for each image in the gallery. <br/><br /><strong>4.</strong> By default Image Grid is outputting the image grid in the section area but you can use the shortcode [imagegrid] to output Image Grid in your post or page. (If you choose to use the shortcode you can disable the section output) <br/><br /><strong>',
+				'shortexp'   => '<strong>1.</strong> In Drag&Drop, drag Image Grid section to a template of your choice.<br/><br /><strong>2.</strong> Go to the page where you want your image grid.<br/><br /><strong>3.</strong> Upload an image gallery to your page (You have to upload images - you cannot choose images that are not uploaded to the specific post or page).<br/><br /><strong>4.</strong> Type in the meta information for each image in the gallery. <br/><br /><strong>4.</strong> By default Image Grid is outputting the image grid in the section area but you can use the shortcode [imagegrid] to output Image Grid in your post or page. (If you choose to use the shortcode you can disable the section output) <br/><br /><strong>',
 			),
 		);
 		$metatab_settings = array(
