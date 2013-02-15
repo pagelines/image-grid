@@ -59,7 +59,7 @@ class ImageGrid extends PageLinesSection {
 							true   => array( 'name' => "Yes" ),
 							false   => array( 'name' => "No" ),
 						) ),
-					'ig_cols'  => array( 'inputlabel' => 'Number of columns', 'type' => 'select', 'selectvalues' => array(
+					'ig_cols'  => array( 'inputlabel' => 'Number of columns (minimum width of page for 4 columns is 1100px)', 'type' => 'select', 'selectvalues' => array(
 							'ig-col-2'   => array( 'name' => "2" ),
 							'ig-col-3'   => array( 'name' => "3" ),
 							'ig-col-4'   => array( 'name' => "4" ),
@@ -83,7 +83,7 @@ class ImageGrid extends PageLinesSection {
 			'ig_more_info'    => array(
 				'type'          => '',
 				'title'      => '<strong style="display:block;font-size:16px;color:#eaeaea;text-shadow:0 1px 0 black;padding:7px 7px 5px;background:#333;margin-top:5px;border-radius:3px;border:1px solid white;letter-spacing:0.1em;box-shadow:inset 0 0 3px black;">HOW TO USE:</strong>',
-				'shortexp'   => '<strong>1.</strong> In Drag&Drop, drag Image Grid section to a template of your choice.<br/><br /><strong>2.</strong> Go to the page where you want your image grid.<br/><br /><strong>3.</strong> Upload an image gallery to your page (You have to upload images - you cannot choose images that are not uploaded to the specific post or page).<br/><br /><strong>4.</strong> Type in the meta information for each image in the gallery. <br/><br /><strong>4.</strong> By default Image Grid is outputting the image grid in the section area but you can use the shortcode [imagegrid] to output Image Grid in your post or page. (If you choose to use the shortcode you can disable the section output) <br/><br /><strong>',
+				'shortexp'   => '<strong>1.</strong> In Drag&Drop, drag Image Grid section to a template of your choice.<br/><br /><strong>2.</strong> Go to the page where you want your image grid.<br/><br /><strong>3.</strong> Upload an image gallery to your page (You have to upload images - you cannot choose images that are not uploaded to the specific post or page).<br/><br /><strong>4.</strong> Type in the meta information for each image in the gallery. <br/><br /><strong>5.</strong> By default Image Grid is outputting the image grid in the section area but you can use the shortcode [imagegrid] to output Image Grid in your post or page. (If you choose to use the shortcode you can disable the section output) <br/><br />',
 			),
 		);
 		$metatab_settings = array(
@@ -187,7 +187,7 @@ class ImageGrid extends PageLinesSection {
 									<div class="<?php echo $active ?>item">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal">×</button>
-											<h3><?php echo $attachment_meta['title'] ? $attachment_meta['title'] :'<br/>'; ?></h3>
+											<h3><?php echo $attachment_meta['title'] ? $attachment_meta['title'] :'There is no title for this image!'; ?></h3>
 										</div>
 										<div class="modal-body">
 											<?php
