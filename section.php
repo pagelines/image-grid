@@ -8,7 +8,7 @@
 	Demo: http://imagegrid.ahansson.com/
 	Workswith: templates, main
 	Cloning: true
-	Version:1.1
+	Version:1.2
 */
 
 /*
@@ -59,10 +59,16 @@ class ImageGrid extends PageLinesSection {
 							true   => array( 'name' => "Yes" ),
 							false   => array( 'name' => "No" ),
 						) ),
-					'ig_cols'  => array( 'inputlabel' => 'Number of columns (minimum width of page for 4 columns is 1100px)', 'type' => 'select', 'selectvalues' => array(
+					'ig_cols'  => array( 'inputlabel' => 'Number of columns (4, 3 and 2 is mobile friendly!)', 'type' => 'select', 'selectvalues' => array(
 							'ig-col-2'   => array( 'name' => "2" ),
 							'ig-col-3'   => array( 'name' => "3" ),
 							'ig-col-4'   => array( 'name' => "4" ),
+							'ig-col-5'   => array( 'name' => "5" ),
+							'ig-col-6'   => array( 'name' => "6" ),
+							'ig-col-7'   => array( 'name' => "7" ),
+							'ig-col-8'   => array( 'name' => "8" ),
+							'ig-col-8'   => array( 'name' => "9" ),
+							'ig-col-10'   => array( 'name' => "10" ),
 						) ),
 					'ig_order'  => array( 'inputlabel' => 'Order Type (Default: ASC)', 'type' => 'select', 'selectvalues' => array(
 							'ASC'   => array( 'name' => "Ascending Order" ),

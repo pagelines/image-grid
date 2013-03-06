@@ -13,6 +13,9 @@ Please do not leave a review as a support question, they are for reviews. I am n
 
 == Changelog ==
 
+= 1.2 =
+* Added up to 10 rows in grid
+
 = 1.1 =
 * Fixed LESS bug on modal height
 
