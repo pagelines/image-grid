@@ -7,6 +7,7 @@
 	Version: 1.3
 	Description: A responsive Image Grid.
 	Class Name: ImageGrid
+	Cloning: true
 	v3: true
 */
 
