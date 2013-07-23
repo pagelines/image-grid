@@ -2,11 +2,10 @@
 /*
 	Section: Image Grid
 	Author: Aleksander Hansson
-	Author URI: http://www.ahansson.com
+	Author URI: http://ahansson.com/
 	Description: A responsive image grid.
 	Class Name: ImageGrid
 	Demo: http://imagegrid.ahansson.com/
-	Workswith: templates, main
 	Cloning: true
 	Version: 1.3
 	v3: true
