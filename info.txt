@@ -13,6 +13,10 @@ Please do not leave a review as a support question, they are for reviews. I am n
 
 == Changelog ==
 
+= 1.3 =
+* DMS Ready
+* Added masonry
+
 = 1.2 =
 * Added up to 10 rows in grid
 
