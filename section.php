@@ -8,7 +8,7 @@
 	Demo: http://imagegrid.ahansson.com/
 	Workswith: templates, main
 	Cloning: true
-	Version:1.3
+	Version: 1.3
 	v3: true
 */
 
