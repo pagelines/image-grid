@@ -2,12 +2,11 @@
 /*
 	Section: Image Grid
 	Author: Aleksander Hansson
-	Author URI: http://ahansson.com/
-	Description: A responsive image grid.
-	Class Name: ImageGrid
-	Demo: http://imagegrid.ahansson.com/
-	Cloning: true
+	Author URI: http://ahansson.com
+	Demo: http://imagegrid.ahansson.com
 	Version: 1.3
+	Description: A responsive Image Grid.
+	Class Name: ImageGrid
 	v3: true
 */
 
