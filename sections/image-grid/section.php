@@ -4,7 +4,6 @@
 	Author: Aleksander Hansson
 	Author URI: http://ahansson.com
 	Demo: http://imagegrid.ahansson.com
-	Version: 1.3
 	Description: A responsive Image Grid.
 	Class Name: ImageGrid
 	Cloning: true
@@ -19,7 +18,7 @@ class ImageGrid extends PageLinesSection {
 
 		wp_enqueue_script( 'jquery' );
 
-		wp_enqueue_script( 'ig-masonry', $this->base_url.'/js/masonry.pkgd.min.js' );
+		wp_enqueue_script( 'masonry', $this->base_url.'/js/masonry.pkgd.min.js' );
 
 	}
 
