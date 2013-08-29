@@ -6,6 +6,7 @@
 	Demo: http://imagegrid.ahansson.com
 	Description: A responsive Image Grid.
 	Class Name: ImageGrid
+	Filter: gallery
 	Cloning: true
 	v3: true
 */
