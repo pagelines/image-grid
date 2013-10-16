@@ -179,7 +179,6 @@ class ImageGrid extends PageLinesSection {
 									</figure>
 								</a>
 							<?php
-
 						}
 
 					?>
