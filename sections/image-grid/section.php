@@ -134,12 +134,7 @@ class ImageGrid extends PageLinesSection {
 
 	function ig_draw_images( $ig_images ) {
 
-		$ig_shortcode_override = ( $this->opt( 'ig_shortcode_override' ) ) ? $this->opt( 'ig_shortcode_override' ) : false;
-		if ( $ig_shortcode_override == false ) {
-			$clone_id = $this->get_the_id();
-		} else {
-			$clone_id = 'shortcode';
-		}
+		$clone_id = ( $this->get_the_id() ) ? $this->get_the_id(): 'shortcode';
 
 		?>
 			<div class="pl-ig-container">
