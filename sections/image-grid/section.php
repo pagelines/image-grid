@@ -35,13 +35,7 @@ class ImageGrid extends PageLinesSection {
 
 		$ig_lightbox_theme = ( $this->opt( 'ig_lightbox_theme' ) ) ? $this->opt( 'ig_lightbox_theme' ) : 'smooth';
 
-		$ig_shortcode_override = ( $this->opt( 'ig_shortcode_override' ) ) ? $this->opt( 'ig_shortcode_override' ) : false;
-		if ( $ig_shortcode_override == false ) {
-			$clone_id = $this->get_the_id();
-		} else {
-			$clone_id = 'shortcode';
-		}
-
+		$clone_id = $this->get_the_id();
 
 		?>
 
