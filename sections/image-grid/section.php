@@ -35,7 +35,14 @@ class ImageGrid extends PageLinesSection {
 
 		$ig_lightbox_theme = ( $this->opt( 'ig_lightbox_theme' ) ) ? $this->opt( 'ig_lightbox_theme' ) : 'smooth';
 
-		$clone_id = $this->get_the_id();
+		$ig_shortcode_override = ( $this->opt( 'ig_shortcode_override' ) ) ? $this->opt( 'ig_shortcode_override' ) : false;
+		if ( $ig_shortcode_override == false ) {
+			$clone_id = $this->get_the_id();
+		} else {
+			$clone_id = 'shortcode';
+		}
+
+
 		?>
 
 			<script type="text/javascript">
@@ -91,7 +98,9 @@ class ImageGrid extends PageLinesSection {
 		}
 	}
 
-	function ig_draw_container() {
+	function ig_draw_container( ) {
+
+		$clone_id = $this->get_the_id();
 
 		global $post;
 		$ig_numposts = ( $this->opt( 'ig_numposts' ) ) ? $this->opt( 'ig_numposts' ) : -1;
@@ -125,7 +134,12 @@ class ImageGrid extends PageLinesSection {
 
 	function ig_draw_images( $ig_images ) {
 
-		$clone_id = $this->get_the_id();
+		$ig_shortcode_override = ( $this->opt( 'ig_shortcode_override' ) ) ? $this->opt( 'ig_shortcode_override' ) : false;
+		if ( $ig_shortcode_override == false ) {
+			$clone_id = $this->get_the_id();
+		} else {
+			$clone_id = 'shortcode';
+		}
 
 		?>
 			<div class="pl-ig-container">
