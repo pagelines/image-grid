@@ -1,6 +1,6 @@
 <?php
 /* Prevent loading this file directly and/or if the class is already defined */
-if ( ! defined( 'ABSPATH' ) || class_exists( 'AHANSSON_Updater' ) )
+if ( ! defined( 'ABSPATH' ) || class_exists( 'AH_ImageGrid_Plugin_Updater' ) )
 	return;
 
 
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) || class_exists( 'AHANSSON_Updater' ) )
  * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
  * @copyright Copyright (c) 2013, David Chandra Purnama
  */
-class AHANSSON_Updater{
+class AH_ImageGrid_Plugin_Updater{
 
 	/**
 	 * @var $config the config for the updater

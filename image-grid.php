@@ -3,31 +3,38 @@
 	Plugin Name: Image Grid
 	Demo: http://imagegrid.ahansson.com
 	Description: A responsive Image Grid.
-	Version: 2.1
+	Version: 2.2
 	Author: Aleksander Hansson
 	Author URI: http://ahansson.com
 	v3: true
-	PageLines: true
 */
 
-add_action( 'init', 'image_grid_updater_init' );
+class ah_ImageGrid_Plugin {
 
-/**
- * Load and Activate Plugin Updater Class.
- * @since 0.1.0
- */
-function image_grid_updater_init() {
+	function __construct() {
+		add_action( 'init', array( &$this, 'ah_updater_init' ) );
+	}
 
-	/* Load Plugin Updater */
-	require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/plugin-updater.php' );
+	/**
+	 * Load and Activate Plugin Updater Class.
+	 * @since 0.1.0
+	 */
+	function ah_updater_init() {
 
-	/* Updater Config */
-	$config = array(
-		'base'      => plugin_basename( __FILE__ ), //required
-		'repo_uri'  => 'http://shop.ahansson.com/',  //required
-		'repo_slug' => 'image-grid',  //required
-	);
+		/* Load Plugin Updater */
+		require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/plugin-updater.php' );
 
-	/* Load Updater Class */
-	new AHANSSON_Updater( $config );
+		/* Updater Config */
+		$config = array(
+			'base'      => plugin_basename( __FILE__ ), //required
+			'repo_uri'  => 'http://shop.ahansson.com',  //required
+			'repo_slug' => 'image-grid',  //required
+		);
+
+		/* Load Updater Class */
+		new AH_ImageGrid_Plugin_Updater( $config );
+	}
+
 }
+
+new ah_ImageGrid_Plugin;

@@ -405,7 +405,7 @@ class ImageGrid extends PageLinesSection {
 			),
 		);
 
-	return $options;
+		return $options;
 
 	}
 }
